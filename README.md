@@ -20,7 +20,6 @@ To install:
 3. Run the following commands in this order:
   * `$ npm install`
   * `$ bower install`
-  * `$ gulp build`
   * `$ gulp serve`
 
 ## Known Bugs
