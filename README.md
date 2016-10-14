@@ -1,23 +1,26 @@
-# _Github Lookup_
+# _Github Stalker_
 
 #### By [**Zachary Matthewstearn**](https://github.com/zacharyMatthewstearn)
 
 ## Description
 
-[INSERT DESCRIPTION]
+Web app where users may enter a GitHub username and see names and descriptions of that person's public repositories.
 
 ## Setup/Installation Requirements
 
-This app requires:
+Requirements:
 
-1. Node.js & npm
+1. Node.js & NPM
 2. Bower
+3. GitHub _Personal Access Token_
 
-To install:
+Setup:
 
-1. Clone this repository to your desktop `git clone https://github.com/zacharyMatthewstearn/github_lookup.git`
-2. Navigate to the FoCo folder
-3. Run the following commands in this order:
+1. Clone this repository to your desktop `$ git clone https://github.com/zacharyMatthewstearn/github_lookup.git`
+2. Create a file in the root directory of the cloned project named _.env_
+3. Copy the following line into your .env file: _exports.apiKey = "###";_
+4. Replace the ### (keeping the quotation marks) with your _GitHub Personal Access Token_
+5. Run the following commands from the root directory of the cloned project:
   * `$ npm install`
   * `$ bower install`
   * `$ gulp serve`
@@ -30,11 +33,15 @@ No known bugs at this time.
 
 * HTML
 * CSS
+* SASS
+* Bootstrap
 * JavaScript
 * jQuery
-* Bootstrap
-* Gulp
 * Node.js
+* NPM
+* Bower
+* Gulp
+* GitHub API
 
 ### License
 
