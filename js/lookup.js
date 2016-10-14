@@ -9,14 +9,12 @@ exports.getRepos = function(_username){
         $('#output-repos').append('<li><a target="_blank" href="' + response[i].html_url + '"><p>' + response[i].name + '</p><p>' + response[i].description + '</p></a></li>');
       }
     }).fail(function(error){
-      console.log(error.responseJSON.message);
       $('#output-user').html('');
       $('#output-repos').html('');
     });
     $.get('https://api.github.com/users/' + _username + '?access_token=' + apiKey).then(function(response){
       $('#output-user').html('<h2 id="user-name">' + response.name + '</h2><img id="user-avatarImage" src=' + response.avatar_url + '>');
     }).fail(function(error){
-      console.log(error.responseJSON.message);
       $('#initial-repo-message').text(error.responseJSON.message).show();
       $('#output-user').html('');
       $('#output-repos').html('');
