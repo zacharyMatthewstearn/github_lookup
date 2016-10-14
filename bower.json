@@ -1,8 +1,9 @@
 {
-  "name": "Github Lookup",
+  "name": "github_lookup",
   "description": "",
   "main": "gulpfile.js",
   "license": "ISC",
+  "moduleType": [],
   "homepage": "https://github.com/zacharyMatthewstearn/github_lookup",
   "ignore": [
     "**/.*",
